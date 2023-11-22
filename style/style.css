@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --text-color: white;
+  --bg-url: url(/assets/bg-desktop.jpg);
+  --stroke-color: rgba(255, 255, 255, 0.5);
+  --surface-color: rgba(255, 255, 255, 0.05);
+  --surface-color-hover: rgba(0, 0, 0, 0.02);
+  --highlight-color: rgba(255, 255, 255, 0.2);
+  --switch-bg-url: url(./assets/moomstar.svg);
+}
+body {
+  background: var(--bg-url) no-repeat top center/cover;
+  width: 100vw;
+  height: 100vh;
+}
+body * {
+  font-family: "inter", sans-serif;
+  color: var(--text-color);
+}
+#start {
+  text-decoration: none;
+}
+#homepage {
+ text-align: center;
+}
+#homepage p {
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 96px;
+  text-align: center;
+  margin-top: 346px;
+  overflow: hidden;
+}
+#homepage p:hover {
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+#homepage img {
+  width: 300px;
+  margin-top: 50px;
+  
+}
+footer {
+  text-align:center;
+  margin-top: 10vh;
+  align-items: center;
+  justify-content: center;
+}
+footer p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: bounce 2s infinite alternate;
+  -webkit-animation: bounce 2s infinite alternate;
+}
+footer ion-icon {
+  width: 20px;
+  height: 20px;
+  padding: 10px;
+}
+/* animações */
+@keyframes slidein {
+  from {
+    left: 0;
+  }
+  to {
+    left: 50%;
+  }
+}
+@keyframes slideout {
+  from {
+    left: 50%;
+  }
+  to {
+    left: 0;
+  }
+}
+@keyframes bounce {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-15px);
+  }
+}
+@-webkit-keyframes bounce {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-15px);
+  }
+}
